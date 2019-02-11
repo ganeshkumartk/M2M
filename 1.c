@@ -29,7 +29,7 @@ int main(){
     printf("Binary values of each characters of given string: ");
     while (len!=0) 
         {
-                printf("\t %d \t",asciiToBinary(toascii(ch)));
+                printf("\t %d \t",asciiToBinary(toascii(str)));
         }
    
     return 0;
