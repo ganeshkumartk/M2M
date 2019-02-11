@@ -2,6 +2,17 @@
 #include <string.h>
 #include <stdlib.h>
 
+int main()
+{ 
+    char str[100];
+    int len;
+    printf(" Enter the string:");
+    scanf("%s",str);
+    printf("\n Binary is: %s", stringToBinary(str));
+    return 0;
+}    
+    
+    
 
 char* stringToBinary(char* s) {
     if(s == NULL) return 0; /* no input string */
