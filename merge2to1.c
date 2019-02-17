@@ -1,3 +1,7 @@
+/* C source code to join two files into another file done as assignment in M2M */
+// Ganesh Kumar T K (MSM17B034) //
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
