@@ -1,6 +1,8 @@
 /* C source code for Text to binary conversion 
     part of M2M Assignment */
 
+// Ganesh Kumar T K (MSM17B034) //
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
