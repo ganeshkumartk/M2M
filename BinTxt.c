@@ -5,9 +5,9 @@
 #include<stdlib.h>
 #include<string.h>
 
-unsigned long binaryToDecimal(char *binary, int length);
 void textToBinary(char *text, int textLength, char *binary, int binaryLength);
 void decimalToBinary(int decimal, char *octet);
+void acii(char *string, int n);
 
 int main(void)
 {
@@ -18,13 +18,15 @@ int main(void)
     printf("Enter text: ");
     scanf("%100[^\n]s", text);
 	textLength = strlen(text);
+    printf("Your ASCII format is: ");
+    acii(text, textLength);
     binaryLength = textLength * 9;      // 8 binary digits + 1 space separator
     binary = malloc(binaryLength + 1);  // + 1 null terminator
     if(binary == NULL)
         exit(1);
     
     textToBinary(text, textLength, binary, binaryLength);
-    printf("Your binary encoding is:\n%s\n", binary);
+    printf("Your binary format is:\n%s\n", binary);
     
     free(binary);
 	
@@ -73,4 +75,21 @@ void decimalToBinary(int decimal, char *octet)
         --octet;
         *octet = '0';
     }
+}
+
+
+void acii(char *string, int n)
+{
+      int i=0;
+
+while (i < n)
+
+        {
+
+            printf(" %c = %d\n", string[i], string[i] );
+
+            ++i ;
+
+        }
+
 }
